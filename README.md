@@ -58,3 +58,7 @@ $ openssl rsa -in ApplePay.key.pem -out ApplePayRsa.key.pem
 今回はiPhone端末をテスト実機としたので、Macと接続してデバッグを行いました。
 iPhone端末で、「設定」→「Safari」→「詳細」→「Webインスペクタ」を有効にします。
 その後、iPhoneとMacをUSBケーブルで繋ぎ、MacのSafariから「開発」を選択肢、接続したiPhone端末を選択します。これでデバッグ準備完了です。
+
+
+・詳しい実装方法はこちらの記事
+https://mintaku-blog.net/applepay-web/
