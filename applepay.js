@@ -1,5 +1,5 @@
 if (window.ApplePaySession) {
-    var merchantIdentifier = 'example.com.store';
+    var merchantIdentifier = 'merchant.sample';
     var promise = ApplePaySession.canMakePaymentsWithActiveCard(merchantIdentifier);
     promise.then(function (canMakePayments) {
         if (canMakePayments) {
@@ -14,7 +14,7 @@ function settlementApplepay() {
 		currencyCode: 'JPY',
 		supportedNetworks: ['visa', 'jcb', 'masterCard'],
 		merchantCapabilities: ['supports3DS'],
-		total: { label: 'Treat', amount: menu_amount }
+		total: { label: 'Sample', amount: menu_amount }
 	};
 
 	var session = new ApplePaySession(2, request);
@@ -88,5 +88,5 @@ function createTransaction(dataObj) {
     return true;
 }
 
-	session.begin();
+　　session.begin();
 };
